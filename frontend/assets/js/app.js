@@ -1,2 +1,9 @@
-// The Expert Academy frontend script
-console.log('Expert Academy frontend loaded');
+function showToast(message) {
+  let toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.style.display = "block";
+
+  setTimeout(() => {
+    toast.style.display = "none";
+  }, 3000);
+}

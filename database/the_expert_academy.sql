@@ -66,6 +66,18 @@ CREATE TABLE assignments (
 );
 
 -- =========================
+-- SUBMISSIONS TABLE
+-- =========================
+
+CREATE TABLE submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    assignment_id INT NOT NULL,
+    user_id INT NOT NULL,
+    file VARCHAR(255),
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- =========================
 -- RESULTS TABLE
 -- =========================
 CREATE TABLE results (
@@ -86,4 +98,21 @@ CREATE TABLE notices (
     title VARCHAR(150),
     message TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE enrollments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    course_id INT NOT NULL,
+    enrolled_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(user_id, course_id)
+);
+
+
+INSERT INTO users (name, email, password, role)
+VALUES (
+'Admin',
+'admin@expertacademy.com',
+'123456',   -- temporary (we fix later)
+'admin'
 );

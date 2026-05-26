@@ -1,35 +1,17 @@
-/* The Expert Academy styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
+body{
+    font-family: Arial, sans-serif;
 }
-header {
-  background: #1a73e8;
-  color: white;
-  padding: 1rem;
+
+.card {
+  transition: 0.3s;
+  border-radius: 12px;
 }
-nav a {
-  color: white;
-  margin-right: 1rem;
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.sidebar a {
+  padding: 10px;
   text-decoration: none;
-}
-main {
-  padding: 1.5rem;
-}
-form {
-  display: grid;
-  gap: 0.75rem;
-  max-width: 400px;
-}
-input, button {
-  padding: 0.75rem;
-  font-size: 1rem;
-}
-button {
-  background: #1a73e8;
-  color: white;
-  border: none;
-  cursor: pointer;
 }
