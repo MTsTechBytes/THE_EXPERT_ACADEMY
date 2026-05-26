@@ -3,29 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - The Expert Academy</title>
+  <title>About - THE EXPERT ACADEMY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>About The Expert Academy</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="contact.html">Contact</a>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Our mission</h2>
-      <p>Helping learners connect with expert instructors and build real-world skills.</p>
-    </section>
-  </main>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="fas fa-graduation-cap"></i> THE EXPERT ACADEMY
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container text-center">
+      <h1 class="mb-4">About The Expert Academy</h1>
+      <p class="lead">Transforming Education, Empowering Learners</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <div class="container py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2 style="color: #333; -webkit-text-fill-color: unset; background: unset;">Our Mission</h2>
+        <p style="font-size: 1.1rem; color: #666; line-height: 1.8;">
+          At The Expert Academy, we believe education should be accessible to everyone, everywhere. Our mission is to connect learners with world-class instructors and provide practical, real-world skills that matter in today's job market.
+        </p>
+        <p style="font-size: 1.1rem; color: #666; line-height: 1.8;">
+          We're committed to making professional development affordable, engaging, and impactful.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div style="height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px;"></div>
+      </div>
+    </div>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <div style="height: 300px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 15px;"></div>
+      </div>
+      <div class="col-md-6">
+        <h2 style="color: #333; -webkit-text-fill-color: unset; background: unset;">Our Vision</h2>
+        <p style="font-size: 1.1rem; color: #666; line-height: 1.8;">
+          We envision a world where everyone has the opportunity to learn and grow, regardless of their background or circumstances. By providing quality education and expert mentorship, we empower individuals to achieve their dreams and make a positive impact.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mt-5 pt-5 border-top">
+      <div class="col-md-4 text-center mb-4">
+        <i class="fas fa-users fa-3x mb-3" style="color: #667eea;"></i>
+        <h5>10,000+ Students</h5>
+        <p>Learning and growing with us worldwide</p>
+      </div>
+      <div class="col-md-4 text-center mb-4">
+        <i class="fas fa-book fa-3x mb-3" style="color: #764ba2;"></i>
+        <h5>100+ Courses</h5>
+        <p>Expert-curated content across many fields</p>
+      </div>
+      <div class="col-md-4 text-center mb-4">
+        <i class="fas fa-star fa-3x mb-3" style="color: #667eea;"></i>
+        <h5>500+ Experts</h5>
+        <p>Industry professionals sharing their knowledge</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <h5 class="mb-3"><i class="fas fa-graduation-cap"></i> The Expert Academy</h5>
+          <p>Your gateway to professional learning.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+            <li><a href="courses.html" style="color: white; text-decoration: none;">Courses</a></li>
+            <li><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Follow Us</h5>
+          <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="#" style="color: white;"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+      <hr style="border-color: rgba(255, 255, 255, 0.3);">
+      <p class="text-center mb-0">© 2026 THE EXPERT ACADEMY. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
+
 </body>
 </html>
